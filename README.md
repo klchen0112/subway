@@ -3,7 +3,7 @@
 
 ## 北京地铁实例
 
-![baidu_subway_map](https://github.com/klchen0112/subway/tree/master/res/baidu_subway_map.png)
+![baidu_subway_map](https://raw.githubusercontent.com/klchen0112/subway/master/res/baidu_subway_map.png)
 
 # 项目地址
 
@@ -201,5 +201,5 @@
 3. 代码没有设计后在编写，重复修改了代码的结构
 4. 技术栈不足，缺少一些技术导致花了较多的时间
 
-[view1]:https://github.com/klchen0112/subway/tree/master/res/view1.png
-[view2]:https://github.com/klchen0112/subway/tree/master/res/view2.png
+[view1]:https://raw.githubusercontent.com/klchen0112/subway/master/res/view1.png
+[view2]:https://raw.githubusercontent.com/klchen0112/subway/master/res/view2.png
