@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
         try {
-            this.dealGraph = new DealGraph();
+            this.dealGraph = new DealGraph("http://106.14.117.206:8000/map.json");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (MalformedURLException e) {

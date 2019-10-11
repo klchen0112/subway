@@ -34,8 +34,10 @@ public class DealGraph {
     private HashMap<String,List<String>> lineStations;
     private int count;
 
-
-    public DealGraph() throws FileNotFoundException, MalformedURLException {
+    public DealGraph(String url) throws FileNotFoundException, MalformedURLException{
+        this(new URL(url));
+    }
+    public DealGraph(java.net.URL url) throws FileNotFoundException, MalformedURLException {
         HashSet<String> ss = new HashSet<>();
         this.stationToVertical = new HashMap<>();
         verticalToStation = new HashMap<>();
@@ -48,8 +50,6 @@ public class DealGraph {
         }
         try {
 
-
-            final URL url = new URL("http://106.14.117.206:8000/map.json");
             HttpURLConnection conn = (HttpURLConnection)url.openConnection();
             conn.setRequestMethod("GET");
             conn.setReadTimeout(5000);
@@ -110,18 +110,18 @@ public class DealGraph {
 
 
     }
-    public static void main(String[] args) {
-        try {
-            DealGraph dealGraph = new DealGraph();
-            System.out.println(dealGraph.getStations());
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-
-    }
+//    public static void main(String[] args) {
+//        try {
+//            DealGraph dealGraph = new DealGraph();
+//            System.out.println(dealGraph.getStations());
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (MalformedURLException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
     private int getId(String staNames) {
         if (stationToVertical.get(staNames) == null) {
             stationToVertical.put(staNames,count);
