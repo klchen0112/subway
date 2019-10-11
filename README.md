@@ -201,5 +201,5 @@
 3. 代码没有设计后在编写，重复修改了代码的结构
 4. 技术栈不足，缺少一些技术导致花了较多的时间
 
-[view1]:https://github.com/klchen0112/subway/tree/master/res/iew1.png
-[view2]:https://github.com/klchen0112/subway/tree/master/res/iew1.png
+[view1]:https://github.com/klchen0112/subway/tree/master/res/view1.png
+[view2]:https://github.com/klchen0112/subway/tree/master/res/view2.png
